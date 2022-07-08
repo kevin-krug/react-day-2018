@@ -1,0 +1,9 @@
+it('filters the items to only shirts', () => {
+	const shirtFinder = new ShirtFinder({ priceMax: 5000 })
+
+	// testing internal implementation detail -> bad / could be refactored away -> would then break
+	expect(shirtFinder.__foundShirts).toEqual([])
+
+	// sticking to public api
+	expect(shirtFinder.getShirts()).toEqual([])
+})

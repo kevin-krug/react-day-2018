@@ -1,0 +1,16 @@
+// function to test
+const redirectUser = user => {
+	if (user.authenticated) {
+		window.location.assign('/home')
+	} else if (...) {
+	...
+	} else {
+	... }
+}
+
+// test without the need to fire up a browser and just mock implementation to not do anything
+test('if the user is logged in they are taken to home', () => {
+	jest.spyOn(window.location, 'assign').mockImplementation(() => {});
+	redirectUser({ authenticated: true })
+	expect(window.location.assign).toHaveBeenCalledWith('/home')
+})

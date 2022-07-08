@@ -1,0 +1,15 @@
+describe('finding items in a price range', () => {
+
+	// clearly says what is being tested
+	it('returns the right set of items', () => {
+
+		// 1. Setup
+		const dummyItems = [{ name: 'shirt', price: 2000 }, ...];
+
+		// 2. Invoke the code under test
+		const result = itemFinder(dummyItems).min(1000).max(5000);
+
+		// 3. Assert on the results of step 2.
+		expect(result).toEqual(...)
+	})
+})

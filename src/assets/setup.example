@@ -1,0 +1,8 @@
+const getItems = () => [...]
+it('...', () => {
+	const items = getItems()
+	...
+})
+
+// 👍 creation of test data is done for each test
+// 👍 if the data has to change, we have one place to change it

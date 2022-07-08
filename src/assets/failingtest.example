@@ -1,0 +1,4 @@
+it('filters by max price correctly', () => {
+	const items = [{ name: 'shirt', price: 3000 }]
+	expect(itemFinder({ maxPrice: 2000})).toEqual([])
+})

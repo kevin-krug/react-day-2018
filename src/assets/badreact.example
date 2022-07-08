@@ -1,0 +1,3 @@
+const wrapper = mount(<Button />)
+wrapper.find('button').simulate('click')
+expect(wrapper.getState().isDisabled).toEqual(true)
